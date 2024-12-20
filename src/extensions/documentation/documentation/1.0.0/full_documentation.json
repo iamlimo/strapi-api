@@ -1,4 +1,18 @@
 {
+  "swagger": {
+    "securityDefinitions": {
+      "BearerAuth": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header"
+      }
+    },
+    "security": [
+      {
+        "BearerAuth": []
+      }
+    ]
+  },
   "openapi": "3.0.0",
   "info": {
     "version": "1.0.0",
@@ -14,7 +28,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-12-20T20:10:19.316Z"
+    "x-generation-date": "2024-12-20T22:04:22.467Z"
   },
   "x-strapi-config": {
     "plugins": [
